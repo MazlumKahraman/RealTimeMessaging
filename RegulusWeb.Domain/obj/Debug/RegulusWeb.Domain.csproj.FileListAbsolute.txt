@@ -1,0 +1,14 @@
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\bin\Debug\RegulusWeb.Domain.dll
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\bin\Debug\RegulusWeb.Domain.pdb
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.csprojAssemblyReference.cache
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.csproj.CopyComplete
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.dll
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.pdb
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\bin\Debug\RegulusWeb.Domain.dll
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\bin\Debug\RegulusWeb.Domain.pdb
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.csproj.AssemblyReference.cache
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.csproj.CopyComplete
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.dll
+C:\Users\cyber\OneDrive\Masaüstü\University\Web Programming\1822120002_MazlumKahraman\RegulusWeb\RegulusWeb.Domain\obj\Debug\RegulusWeb.Domain.pdb

@@ -1,0 +1,19 @@
+version: 0.2
+
+env:
+  variables:
+    SOLUTION: .\RegulusWeb.sln
+    PACKAGE_DIRECTORY: .\packages
+    DOTNET_FRAMEWORK: 4.5
+
+phases:
+  build:
+    commands:
+      - '& "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe" -p:FrameworkPathOverride="C:\Windows\Microsoft.NET\Framework\v4.0.30319" $env:SOLUTION'
+      
+artifacts:
+  name: beta
+  base-directory: .\RegulusWeb
+  files:
+    - '**/*'
+

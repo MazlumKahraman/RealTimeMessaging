@@ -1,0 +1,130 @@
+﻿@model RegulusWeb.Models.UserModel
+@{
+    ViewBag.Title = "Login / Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="jumbotron defaultPanel" style="display:none; font-family: Arial">
+    <h1>Regulus Web</h1>
+    <p>Bu web sitesinde insanlarla tanışıp, konuşma imkanı bulacak ve yeni arkadaşlar edinmenin yanı sıra istediğiniz konularda tartışıp fikir alış verişinde bulunabileceksiniz.</p>
+    <p>Haydi sen de hemen "Kayıt Ol" butonuna tıklayarak mesajlaşmaya başla</p>
+    <p><a class="btn btn-primary btn-lg" id="btnSignUp2">Kayıt Ol</a></p>
+</div>
+<div class="jumbotron loginPanel" style="display:none">
+    <form class="form-horizontal" action="/Account/Login" method="post" id="frmLogin">
+        <input type="hidden" name="FormType" value="Login" />
+        <fieldset>
+            <legend>Login</legend>
+            @if (!string.IsNullOrEmpty(Model.LoginError))
+            {
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label"></label>
+                    <div class="col-lg-4">
+                        <div class="alert alert-dismissible alert-danger">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            @Model.LoginError
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Kullanıcı Adı</label>
+                <div class="col-lg-4">
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "Kullanıcı Adı", @data_bv_notempty = "" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Şifre</label>
+                <div class="col-lg-4">
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Şifre", @data_bv_notempty = "" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary">Giriş</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<div class="jumbotron signUpPanel" style="display:none">
+    <form class="form-horizontal" action="/Account/Login" method="post" id="frmSignUp">
+        <input type="hidden" name="FormType" value="SignUp" />
+        <fieldset>
+            <legend>Kayıt Ol</legend>
+            @if (!string.IsNullOrEmpty(Model.Error))
+            {
+                <div class="form-group">
+                    <label for="inputEmail" class="col-lg-2 control-label"></label>
+                    <div class="col-lg-4">
+                        <div class="alert alert-dismissible alert-danger">
+                            <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            @Model.Error
+                        </div>
+                    </div>
+                </div>
+            }
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Ad</label>
+                <div class="col-lg-4">
+                    @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @placeholder = "Adınız", @data_bv_notempty = "" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Doğum Tarihi</label>
+                <div class="col-lg-4">
+                    @Html.TextBoxFor(m => m.DOB, new { @class = "form-control", @placeholder = "Gün/Ay/Yıl", @data_bv_notempty = "",@data_bv_date_message="Doğum tarihi geçerli değil!" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Cinsiyet</label>
+                <div class="col-lg-4" style=" margin-top: 7px;">
+                    @Html.RadioButtonFor(m => m.Gender, "Male", new { @data_bv_notempty=""}) Erkek
+                    @Html.RadioButtonFor(m => m.Gender, "Female") Kadın
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputEmail" class="col-lg-2 control-label">Kullanıcı Adı</label>
+                <div class="col-lg-4">
+                    @Html.TextBoxFor(m => m.UserName1, new { @class = "form-control", @placeholder = "Kullanıcı Adınız", @data_bv_notempty = "" })
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="col-lg-2 control-label">Şifre</label>
+                <div class="col-lg-4">
+                    @Html.PasswordFor(m => m.Password1, new { @class = "form-control", @placeholder = "Şifreniz", @data_bv_notempty = "" })
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                    <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script type="text/javascript">
+    validateForm("#frmLogin");
+    validateForm("#frmSignUp");
+    $('#btnLogin').click(function () {
+        $(".jumbotron").animate({ "opacity": "hide", top: "100" }, 500);
+        $(".loginPanel").animate({ "opacity": "show", top: "100" }, 500);
+    });
+    $('#btnSignUp').click(function () {
+        $(".jumbotron").animate({ "opacity": "hide", top: "100" }, 500);
+        $(".signUpPanel").animate({ "opacity": "show", top: "100" }, 500);
+    });
+    $('#btnSignUp2').click(function () {
+        $(".jumbotron").animate({ "opacity": "hide", top: "100" }, 500);
+        $(".signUpPanel").animate({ "opacity": "show", top: "100" }, 500);
+    });
+    var from = '@TempData["ReturnFrom"]'
+    if (from == "Login") {
+        $('#btnLogin').click();
+    }
+    else if (from == "SignUp") {
+        $('#btnSignUp').click();
+    }
+    else {
+        $(".defaultPanel").animate({ "opacity": "show", top: "100" }, 500);
+    }
+</script>

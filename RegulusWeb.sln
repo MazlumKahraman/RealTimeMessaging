@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegulusWeb.Domain", "RegulusWeb.Domain\RegulusWeb.Domain.csproj", "{5F99B68D-8B21-4FAA-91E1-0D9A3C96D391}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegulusWeb.UI", "RegulusWeb\RegulusWeb.UI.csproj", "{AAE66658-74D4-4483-9804-17F0288145A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F99B68D-8B21-4FAA-91E1-0D9A3C96D391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F99B68D-8B21-4FAA-91E1-0D9A3C96D391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F99B68D-8B21-4FAA-91E1-0D9A3C96D391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F99B68D-8B21-4FAA-91E1-0D9A3C96D391}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE66658-74D4-4483-9804-17F0288145A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE66658-74D4-4483-9804-17F0288145A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE66658-74D4-4483-9804-17F0288145A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE66658-74D4-4483-9804-17F0288145A4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D214C2F-F33D-4ACF-802E-3EE1D7A5C592}
+	EndGlobalSection
+EndGlobal
